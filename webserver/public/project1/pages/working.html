@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy's works</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAD7C5;
+            text-align: center;
+            color: #5E4B3C;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        h1 {
+            color: #8B5A2B;
+            font-size: 2.7em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .item {
+            width: calc(50% - 10px);
+            background: #D8BFAA;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: 300px; 
+            object-fit: cover;
+            display: block;
+        }
+        .info {
+            padding: 15px;
+            background: #C4A484;
+        }
+        .info h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #4B382A;
+        }
+        .info p {
+            font-size: 14px;
+            color: #6B4F36;
+        }
+        #back {
+            margin-top: 40px;
+        }
+        #back a {
+            font-size: 0.8em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #4B382A;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            background: #C4A484;
+            border-radius: 15px;
+            border: 2px solid #8B5A2B;
+            transition: all 0.3s ease-in-out;
+        }
+        #back a:hover {
+            background: #8B5A2B;
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Gallery</h1>
+        <div class="gallery">
+            <div class="item">
+                <img src="../images/fab1.jpg" alt="作品1">
+                <div class="info">
+                    <h2><a href="fab.html">Fabrication</a></h2>
+                    <p>I made a series of wooden works.</p>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/print.png" alt="作品2">
+                <div class="info">
+                    <h2><a href="https://docs.google.com/document/d/1GvW0aCE5r_LjTWsXWWZ-2VEbvimC32pfmKYhjx8qjjc/edit?usp=sharing">3D Printing</a></h2>
+                    <p>I designed an animal chess by using 3d pringting and laser cutting.</p>
+                
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/mybro.png" alt="作品3">
+                <div class="info">
+                    <h2><a href="http://159.223.178.110/michael/index.html">Website</a></h2>
+                    <p>I designed a website for my brother.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/morse.png" alt="作品3">
+                <div class="info">
+                    <h2><a href="http://159.223.178.110/Morsecode/final/index.html">Website</a></h2>
+                    <p>I designed a website for Morse Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 id="back"><a href="../index.html">Back to Andy's Home</a></h3>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Wall</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #EAD7C5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            color: #8B5A2B;
+            font-size: 2.7em;
+        }
+
+        .timeline {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 50px 0;
+            perspective: 1000px;
+            width: 80vw;
+            scrollbar-width: none;
+        }
+
+        .timeline::-webkit-scrollbar {
+            display: none;
+        }
+
+        .photo {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+            scroll-snap-align: center;
+        }
+
+        .timeline:has(.photo:hover) .photo:not(:hover) {
+            transform: scale(0.85) rotateY(-15deg);
+            opacity: 0.7;
+        }
+
+        .photo:hover {
+            transform: scale(1.1) rotateY(0deg);
+            opacity: 1;
+        }
+
+        #back {
+            margin-top: 40px;
+        }
+        #back a {
+            font-size: 0.8em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #4B382A;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            background: #C4A484;
+            border-radius: 15px;
+            border: 2px solid #8B5A2B;
+            transition: all 0.3s ease-in-out;
+        }
+        #back a:hover {
+            background: #8B5A2B;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>My Memory</h1>
+    </div>
+    <div class="timeline">
+        <div class="photo" style="background-image: url('../images/58025424b469c81993dac11cb2a3f935.JPG');"></div>
+        <div class="photo" style="background-image: url('../images/86d21949142b8979635a2d2ba41cfe80.JPG');"></div>
+        <div class="photo" style="background-image: url('../images/fxn\ 2025-01-28\ 234649.293.JPG');"></div>
+        <div class="photo" style="background-image: url('../images/WechatIMG234.jpg');"></div>
+        <div class="photo" style="background-image: url('../images/WechatIMG236.jpg');"></div>
+        <div class="photo" style="background-image: url('../images/IMG_4012.JPG');"></div>
+        <div class="photo" style="background-image: url('../images/IMG_3388.JPG');"></div>
+        <div class="photo" style="background-image: url('../images/yee.jpg');"></div>
+        
+    </div>
+ <div id="back">
+    <h3 ><a href="../index.html">Back to Andy's Home</a></h3>
+    </div>
+
+   
+</body>
+</html>
