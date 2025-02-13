@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Clock 🔥</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Averia+Gruesa+Libre&family=Bungee+Shade&family=Butcherman&family=Homenaje&family=Kablammo&family=Kaushan+Script&family=Limelight&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Calorie Clock</h1>
+    <p class="info-text">At rest, you burn <strong>0.02 kcal per second</strong>.</p>
+
+    <div class="clock-wrapper">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="clock-center"></div>
+        </div>
+    </div>
+
+    <div class="clock-container">
+        <p class="clock-text">Total Calories Burned Today:</p>
+        <div class="calorie-display">0 kcal</div>
+
+        <div class="time-labels">
+            <span>6AM</span>
+            <span>12PM</span>
+            <span>6PM</span>
+            <span>12AM</span>
+        </div>
+        <div class="time-bar-container">
+            <div class="time-bar-fill"></div>
+        </div>
+    </div>
+
+    <button class="burn-btn">🔥 Time to Burn Your Calories!</button>
+    <div class="warning-message">⚠️ "Weight loss is a long-term process, not a one-day thing!"</div>
+    <button class="reset-btn">✅ Got it!</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
