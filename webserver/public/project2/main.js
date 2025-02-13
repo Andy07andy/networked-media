@@ -1,22 +1,20 @@
 let caloriesPerSecond = 0.02; // Burn rate per second
 let clockWidth = 1; // 1 = full size, stops at 50%
 
-// Get seconds since midnight
+// Get the number of seconds passed since midnight
 function getSecondsSinceMidnight() {
     let now = new Date();
     return now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
 }
 
-// Initialize calorie clock based on time since midnight
-function initializeCalorieClock() {
-    let secondsSinceMidnight = getSecondsSinceMidnight();
-    totalCalories = secondsSinceMidnight * caloriesPerSecond; // Correct calculation
-    updateUI();
+// Correctly calculates total calories burned from midnight
+function calculateCaloriesSinceMidnight() {
+    return getSecondsSinceMidnight() * caloriesPerSecond;
 }
 
-// Update calorie count every second
+// Update the calorie count every second
 function updateCalorieClock() {
-    totalCalories = getSecondsSinceMidnight() * caloriesPerSecond; // Always recalculated dynamically
+    totalCalories = calculateCaloriesSinceMidnight();
     updateUI();
     updateClockShrink();
 }
@@ -45,6 +43,7 @@ function updateClockShrink() {
 function burnCaloriesNow() {
     if (clockWidth > 0.5) {
         clockWidth -= 0.02;
+        document.querySelector('.clock-wrapper').style.transform = `scaleX(${clockWidth})`;
     } else {
         document.querySelector('.warning-message').style.opacity = 1;
         document.querySelector('.reset-btn').style.display = "block";
@@ -52,7 +51,7 @@ function burnCaloriesNow() {
     }
 }
 
-// Reset clock when clicking reset
+// Reset clock width when clicking reset
 function resetClock() {
     clockWidth = 1;
     document.querySelector('.clock-wrapper').style.transform = `scaleX(${clockWidth})`;
@@ -61,19 +60,29 @@ function resetClock() {
     document.querySelector('.reset-btn').style.display = "none";
 }
 
-// Check for midnight reset (not actually needed but keeping it as a failsafe)
-function checkForMidnightReset() {
+// Update the analog clock hands
+function updateAnalogClock() {
     let now = new Date();
-    if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() < 2) {
-        initializeCalorieClock();
-    }
+    let hours = now.getHours() % 12;
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    
+    document.querySelector('.hour-hand').style.transform = `rotate(${hours * 30 + minutes / 2}deg)`;
+    document.querySelector('.minute-hand').style.transform = `rotate(${minutes * 6}deg)`;
+    document.querySelector('.second-hand').style.transform = `rotate(${seconds * 6}deg)`;
+}
+
+// Initialize calorie tracking and clock
+function initializeCalorieClock() {
+    updateCalorieClock(); 
+    updateAnalogClock(); 
+    setInterval(updateCalorieClock, 1000); 
+    setInterval(updateAnalogClock, 1000); 
 }
 
 // Event listeners
 document.querySelector('.burn-btn').addEventListener('click', burnCaloriesNow);
 document.querySelector('.reset-btn').addEventListener('click', resetClock);
 
-// Start tracking
+// Start everything
 initializeCalorieClock();
-setInterval(updateCalorieClock, 1000);
-setInterval(checkForMidnightReset, 60000); // Check for midnight reset every minute
