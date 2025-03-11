@@ -1,0 +1,64 @@
+<h1>Product List</h1>
+
+<!-- FILTER FORM -->
+<form class="row mb-4" method="GET" action="/products">
+  <!-- CATEGORY FILTER -->
+  <div class="col-auto">
+    <label for="category">Select Category:</label>
+    <select class="form-select" name="category" id="category" onchange="applyFilters()">
+      <option value="ALL" <%= (currentCategory === "ALL" || currentCategory === "") ? "selected" : "" %>>All Categories</option>
+      <% categories.forEach(category => { %>
+        <option value="<%= category %>" <%= (currentCategory === category) ? "selected" : "" %>>
+          <%= category %>
+        </option>
+      <% }) %>
+    </select>
+  </div>
+
+  <!-- FEATURE FILTER -->
+  <div class="col-auto">
+    <label for="feature">Select Feature:</label>
+    <select class="form-select" name="feature" id="feature" onchange="applyFilters()">
+      <option value="ALL" <%= (currentFeature === "ALL" || currentFeature === "") ? "selected" : "" %>>All Features</option>
+      <% features.forEach(feature => { %>
+        <% if (feature) { %>
+          <option value="<%= feature %>" <%= (currentFeature === feature) ? "selected" : "" %>>
+            <%= feature %>
+          </option>
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+</form>
+
+<!-- PRODUCT LIST -->
+<div class="row">
+  <% products.forEach(product => { %>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="<%= product.image %>" class="card-img-top img-fluid" alt="<%= product.name %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= product.name %></h5>
+          <p class="card-text"><%= product.description %></p>
+          <p>Category: <%= product.category %></p>
+          <p>Features:
+            <% product.MainFunction.forEach(f => { %>
+              <span class="badge bg-secondary"><%= f %></span>
+            <% }) %>
+          </p>
+          <p>Average Rating: <i class="fas fa-star"></i> <%= product.avgRating %></p>
+          <a href="/product/<%= product.id %>" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+</div>
+
+<!-- JavaScript to Apply Filters -->
+<script>
+  function applyFilters() {
+    const category = document.getElementById('category').value;
+    const feature = document.getElementById('feature').value;
+    window.location.href = `/products?category=${encodeURIComponent(category)}&feature=${encodeURIComponent(feature)}`;
+  }
+</script>

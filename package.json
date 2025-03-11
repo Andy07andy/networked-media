@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "name": "networked-media",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andy07andy/networked-media.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andy07andy/networked-media/issues"
+  },
+  "homepage": "https://github.com/Andy07andy/networked-media#readme",
+  "description": ""
+}

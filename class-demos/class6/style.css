@@ -1,0 +1,39 @@
+body{
+    margin: 0%;
+    overflow-y: hidden;
+}
+
+
+
+#container{
+    height: 150vh;
+    background-color: lightblue;
+    width: 80%;
+    margin: auto;
+}
+
+#myBtn{
+position: relative;
+top: 10px;
+z-index: 10;
+}
+
+#change{
+    position:absolute;
+    left: 200px;
+    height: 100px;
+    width: 100px;
+}
+.day{
+    background-color: rgb(250, 255, 250);
+    transition: background-color 1s linear;
+}
+.day:hover{
+    top: 10px;
+    transition: top 1s linear;
+    
+}
+.night{
+     background-color: navy;
+}
+   

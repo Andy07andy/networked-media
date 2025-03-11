@@ -1,0 +1,146 @@
+[{
+    "id": "1",
+    "name": "Foldable Reacher Grabbers Pickup Stick with Anti-Slip 360° Rotating Jaw",
+    "description": "Coated with deeper and rougher non-slip rubber layer, the horseshoe claw jaw increases the contact area and friction resistance after the tips are closed, making it easy to pick up tiny scraps such as paperclips, and coins on the floor with precision ",
+    "category": "Medical Devices",
+    "MainFunction": ["Mobility Assistance", "Daily Living Assistance"],
+    "image": "/images/grabber.png"
+  },
+  {
+    "id": "2",
+    "name": " Multifunction Car Transfer Aid - Help Elderly Get Out of Car",
+    "description": "A convenient and quick way to get in and out of the car with minimal effort. High-quality materials that withstand daily use and will last for many years to come. Additional emergency function: cut seat belts and break windows in an emergency. Small size, every car owner deserves it.",
+    "category": "Medical Devices",
+    "MainFunction": ["Mobility Assistance"],
+    "image": "/images/Carhandle.png"
+  },
+  {
+    "id": "3",
+    "name": "Easy On and Off Stocking Slider",
+    "description": "Easily put on your own socks or hosiery with the sock assist device. Perfect for those recovering from surgery, injury or those with limited mobility. Latex-free plastic shell contours to slide over the foot and heel, pulling up the sock with ease.",
+    "category": "Medical Devices",
+    "MainFunction": ["Dressing Assistance", "Daily Living Assistance"],
+    "image": "/images/Slider.png"
+  },
+  {
+    "id": "4",
+    "name": "Adjustable Toilet Frame for Elderly",
+    "description": "Made from corrosion-resistant aluminum frames, our toilet safety rails are built to last and can hold up to 300 pounds. The sturdy construction ensures stability and reliability for everyday use. Invest in safety measures that stand the test of time, because your loved one's safety is priceless.",
+    "category": "Medical Devices",
+    "MainFunction": ["Mobility Assistance", "Daily Living Assistance"],
+    "image": "/images/toiletFrame.png"
+  },
+  {
+    "id": "5",
+    "name": "Metal Extra Long Handled Shoe Horn",
+    "description": "Fressing, putting on shoes, buttoning, taking off socks, etc. are no longer a problem, you only need this one product. Thick and sturdy, smooth and without sharp edges, keep your shoes beautiful. Suitable For Everyone - 18.5-28-36.5IN meets your various daily needs, people of all heights can find a comfortable length, you can sit or stand to put on shoes without bending over.",
+    "category": "Medical Devices",
+    "MainFunction": ["Mobility Assistance", "Dressing Assistance"],
+    "image": "/images/Shoehorn.png"
+  },
+  {
+    "id": "6",
+    "name": "Foldable Power Wheelchair",
+    "description": "Introducing the Ranger Royce, our signature model that fits seamlessly into the portable category. Featuring two batteries, two motors, and a meticulously crafted frame with an expertly engineered controller system, the Royce stands out as the lightest power wheelchair in the RANGER Series, weighing just 40 lbs. This chair is a true marvel of engineering, combining aesthetics with superior mobility and comfort. Its frame, made from aerospace-grade aluminum, offers exceptional strength while remaining extremely lightweight. The certified batteries ensure that the chair is safe for air travel, making it the perfect choice for your on-the-go lifestyle.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Mobility Assistance", "Daily Living Assistance"],
+    "image": "/images/wheelchai.png"
+  },
+  {
+    "id": "7",
+    "name": "Original Personal Voice Amplifier",
+    "description": "A True Original Voice Amplifier that amplifies your voice without making it mechanized in sound quality. Enjoy the freedom of expressing yourself confidently, without the fear of your voice getting lost in the crowd. Amplifys your voice and saves your throat. The sound is clear and no distortion. The max 10 watts sound can cover about 10000 sq. ft (1000 ㎡), loud enough to cover a big room.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Communication Assistance"],
+    "image": "/images/VoiceAmplifier.png"
+  },
+  {
+    "id": "8",
+    "name": "Tobii Gaming Eye Tracker Mounting Kit",
+    "description": "This kit includes extra mounts for your Tobii Eye Tracker 5 and Tobii Eye Tracker 4C. The Flex Mount places underneath your curved, flat, ultrawide, or thin-bezel screen. Catch your right angle - We all have different postures and heights. Therefore our positioning in front of a screen will vary. Use the Flex Mount to put the tracker at the right angle.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Communication Assistance"],
+    "image": "/images/eyetrack.png"
+  },
+  {
+    "id": "9",
+    "name": "Upgraded Raised Dots, Numbers & Punctuation Braille Learning for Beginners",
+    "description": "BozenTek's braille alphabet, with expertly raised dots (upgraded design, very sturdy), ensures durability and superior tactile feedback, facilitating easy learning for the visually impaired or blind in any setting. Braille Learning Essential: Placing the letter W at the end of the alphabet is consistent with Braille recognition. Carefully crafted to strict braille standards. The content is thoughtfully arranged to align with the learning habits of braille users, ensuring a seamless and effective learning experience for beginners",
+    "category": "Medical Devices",
+    "MainFunction": ["Visual Assistance "],
+    "image": "/images/AlphabeBoard.png"
+  },
+  {
+    "id": "10",
+    "name": "Hearing Aid Clips to Prevent Loss",
+    "description": "Elonvoc hearing aid lanyard is made of high-quality silicone and durable, comfortable to wear, and will not irritate your skin. It is suitable for people with different skin tones and ages. Elonvoc hearing aid clip is made of high-quality plastic, durable and not easy to deform. It is suitable for BTE hearing aids and can be used with most brands of hearing aids. It is easy to use and can be firmly fixed on the hearing aid.",
+    "category": "Medical Devices",
+    "MainFunction": ["Hearing Assistance "],
+    "image": "/images/hearing-aid.png"
+  },
+  {
+    "id": "11",
+    "name": "Wearable Wireless Pager ",
+    "description": "Includes two alert buttons and a portable pager. The call buttons can be worn on a lanyard or mounted on a wall so caregivers can be alerted anywhere. This is not a wireless doorbell that plugs into the wall. The caregiver pager portable, allowing caregivers to receive alerts throughout the home.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Cognitive & Learning Assistance"],
+    "image": "/images/WirelessPager.png"
+  },
+  {
+    "id": "12",
+    "name": "LiveFine Smart WiFi Automatic Pill Dispenser",
+    "description": "Preset Dosage Templates Provide Multiple Reminder Options, Improve Dosage Timing & Helps Prevent Missed & Double Doses | 28 High-Capacity Slots Accommodate Multiple Pills for Minimal Refills & Maximum Efficiency, While Transparent Lid Allows for Effortless Visual Monitoring",
+    "category": "Electronic Devices",
+    "MainFunction": ["Daily Living Assistance"],
+    "image": "/images/Pill.png"
+  },
+  {
+    "id": "13",
+    "name": "Hearing Aids for Seniors with Noise Cancelling and Volume Control",
+    "description": "The Kullre hearing aids suitable for mild to moderate hearing loss, according to your needs and different usage scenarios, you can get different gains from Kullre heaing aids, assist in watching TV, on the phone, in normal discourse and more. The Kullre hearing aids makes you get the sound more natural, and the Kullre hearing aids hearing devices amplify speech while reducing background noise, making it easier and more comfortable for you to hear in noisy settings.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Hearing Assistance "],
+    "image": "/images/ear.png"
+  }
+  ,
+  {
+    "id": "14",
+    "name": "MagZip Inclusive One-Handed Magnetic Zipper for All Abilities",
+    "description": "30” magnetic one-handed molded zipper, can be cut to custom lengths. Especially helpful for the disabled community, individuals with special needs or kids just learning to zip. Patented magnetic base with #5 teeth offers simple “click and zip” convenience.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Dressing Assistance"],
+    "image": "/images/zipper.png"
+  },
+  {
+    "id": "15",
+    "name": "Joyreal Non Verbal Communication Tools for Speech Therapy & Stroke Rehab",
+    "description": "24 Easy To Understand Talking Buttons- Our AAC device for speech comes with 24 pre-installed instructions in a picture and color format that makes it very easy to communicate simple, but essential instructions such as yes, no, I’m thirsty, I’m sleepy, it's too loud and many more, Compared with other competing products, more talking buttons can better meet daily needs.",
+    "category": "Medical Devices",
+    "MainFunction": ["Communication Assistance"],
+    "image": "/images/speech.png"
+  } ,
+  {
+    "id": "16",
+    "name": "Fidget Wrist Cuff and Arm Pillow Sensory Toy for Alzheimer’s Dementia and Autism Anxiety Relief Therapy",
+    "description": "Fidget blankets help to relieve anxiety and restlessness that comes with Alzheimer's, dementia and other similar conditions, keeping hands busy and reducing loneliness. Fidget blanket includes buttons,colorful sequin,ribbons,tassels,colorful sequin,beads,Push-Fidget and so on,keeping restless hands busy. Alzheimers products is very convenient to use, just wrap it around the wrist or arm, the cuffs are very light, easy to carry, and has a calming and relaxing effect.",
+    "category": "Medical Devices",
+    "MainFunction": ["Cognitive & Learning Assistance"],
+    "image": "/images/toy.png"
+  },
+  {
+    "id": "17",
+    "name": "10Pcs Nonverbal Communication Board",
+    "description": "The contents of the aphasia communication tools include what do I want to do, who do I want to see, how do I feel, analog keyboard, level of pain, type of pain and more; We carefully envisioned all the needs of patients. In order for aphasic to see the text clearly and communicate without effort, our non verbal communication tools have increased the font size on the basis of previous products; For the good mood of patients, we use more intuitive and fresh pictures.",
+    "category": "Medical Devices",
+    "MainFunction": ["Visual Assistance "],
+    "image": "/images/learningboard.png"
+  },
+  {
+    "id": "18",
+    "name": "Portable Digital Video Magnifier",
+    "description": "Handheld digital magnifier boasts a full color LCD screen with HD resolution, restore colors and details truly, allowing for clear and easy viewing of text, photos, and other materials. The reading aids also equipped with a high-definition wide angle camera, which provides clear scenes from far and near.",
+    "category": "Electronic Devices",
+    "MainFunction": ["Visual Assistance "],
+    "image": "/images/VideoMagnifier.png"
+  }
+]

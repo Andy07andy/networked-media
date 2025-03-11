@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1741481015382",
+    "productId": "1",
+    "rating": "5",
+    "text": "nice",
+    "likes": 2,
+    "createdAt": "2025-03-09T00:43:35.383Z"
+  },
+  {
+    "id": "1741546643417",
+    "productId": "1",
+    "rating": "4",
+    "text": "nicenice",
+    "likes": 2,
+    "createdAt": "2025-03-09T18:57:23.417Z"
+  },
+  {
+    "id": "1741662782622",
+    "productId": "16",
+    "rating": "5",
+    "text": "it was really helpful for my grandma!",
+    "likes": 2,
+    "createdAt": "2025-03-11T03:13:02.622Z"
+  }
+]

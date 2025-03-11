@@ -1,0 +1,72 @@
+<!-- <a href="/products" class="back-btn">⬅ Back to Products</a> -->
+<!-- because in that form, the WAVE checked and said it was ""redundant link，and i asked ChatGPT to help me change the form to this(under this line). -->
+
+<button class="back-btn" onclick="window.location.href='/products'">
+    ⬅ Back to Products
+  </button>
+  
+
+<main class="container product-container">
+    <h1 class="product-title"><%= product.name %></h1>
+    <p class="product-category"><strong>Category:</strong> <%= product.category %></p>
+    <p class="product-description"><%= product.description %></p>
+
+    <!-- Features -->
+    <p><strong>Features:</strong>
+        <% product.MainFunction.forEach(feature => { %>
+            <span class="badge"><%= feature %></span>
+        <% }) %>
+    </p>
+
+    <!-- Total Likes & Reviews -->
+    <div class="product-stats">
+        <span class="likes"><i class="fas fa-thumbs-up"></i> <%= totalLikes %> Likes</span>
+        <span class="reviews"><i class="fas fa-comments"></i> <%= totalReviews %> Reviews</span>
+    </div>
+
+    <!-- Product Image -->
+    <div class="product-image">
+        <img src="<%= product.image %>" alt="<%= product.name %>" class="img-fluid">
+    </div>
+
+    <!-- Reviews Section -->
+    <h2 class="reviews-title">User Reviews</h2>
+
+    <% if (reviews.length > 0) { %>
+        <% reviews.forEach(review => { %>
+            <div class="review-card">
+                <p class="review-rating"><i class="fas fa-star"></i> Rating: <%= review.rating %>/5</p>
+                <p class="review-text"><%= review.text %></p>
+                <p class="review-meta">Submitted on: <%= new Date(review.createdAt).toLocaleDateString() %></p>
+
+                <!-- Like Button -->
+                <form action="/review/<%= review.id %>/like" method="POST" class="like-form">
+                    <button type="submit" class="like-button">
+                        <i class="fas fa-thumbs-up"></i> <%= review.likes %> Likes
+                    </button>
+                </form>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No reviews yet. Be the first to leave one!</p>
+    <% } %>
+
+    <!-- Submit Review Form -->
+    <h2>Leave a Review</h2>
+    <form action="/review" method="POST" class="review-form">
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+
+        <label for="text">Review:</label>
+        <textarea name="text" id="text" required></textarea>
+
+        <input type="hidden" name="productId" value="<%= product.id %>">
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+</main>

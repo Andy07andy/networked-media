@@ -1,0 +1,62 @@
+<h1 class="fw-bold">Product List</h1>
+
+<!-- Filter Form-->
+<form class="row mb-4 align-items-center" method="GET" action="/products">
+  <!-- Category Filter -->
+  <div class="col-auto">
+    <label for="category" class="fw-bold">Select Category:</label>
+    <select class="form-select" name="category" id="category">
+      <option value="ALL" <%= (currentCategory === "ALL" || currentCategory === "") ? "selected" : "" %>>All Categories</option>
+      <% categories.forEach(category => { %>
+        <option value="<%= category %>" <%= (currentCategory === category) ? "selected" : "" %>>
+          <%= category %>
+        </option>
+      <% }) %>
+    </select>
+  </div>
+
+  <!-- Feature Filter -->
+  <div class="col-auto">
+    <label for="feature" class="fw-bold">Select Feature:</label>
+    <select class="form-select" name="feature" id="feature">
+      <option value="ALL" <%= (currentFeature === "ALL" || currentFeature === "") ? "selected" : "" %>>All Features</option>
+      <% features.forEach(feature => { %>
+        <% if (feature) { %>
+          <option value="<%= feature %>" <%= (currentFeature === feature) ? "selected" : "" %>>
+            <%= feature %>
+          </option>
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+
+  <!-- Apply Filter Button -->
+  <div class="col text-end">
+    <button type="submit" class="btn btn-primary">Apply Filters</button>
+  </div>
+</form>
+
+<!-- Product List-->
+<main>
+  <div class="row">
+    <% products.forEach(product => { %>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="<%= product.image %>" class="card-img-top img-fluid" alt="<%= product.name %>">
+          <div class="card-body">
+            <h2 class="card-title"><%= product.name %></h2>
+            <p class="card-text"><%= product.description %></p>
+            <p><strong>Category:</strong> <%= product.category %></p>
+            <p><strong>Features:</strong>
+              <% product.MainFunction.forEach(f => { %>
+                <span class="badge bg-secondary"><%= f %></span>
+              <% }) %>
+            </p>
+            <p><strong>Average Rating:</strong> <i class="fas fa-star text-warning"></i> <%= product.avgRating %></p>
+            <a href="/product/<%= product.id %>" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</main>
