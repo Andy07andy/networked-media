@@ -257,12 +257,12 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align content to the left */
-  height: 100vh; /* Full-screen height */
+  align-items: flex-start; 
+  height: 100vh; 
   text-align: left;
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto; /* Centers the block */
+  margin: 0 auto; 
   position: relative;
 }
 
@@ -277,8 +277,8 @@ body.landing-page {
 .landing-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: white; /* Ensures text stands out */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+  color: white; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
   line-height: 1.3;
 }
 
