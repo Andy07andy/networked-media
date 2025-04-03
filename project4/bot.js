@@ -18,7 +18,7 @@ async function getRandomMeal() {
     return {
         name: meal.strMeal,
         country: meal.strArea,
-        instructions: meal.strInstructions.slice(0, 100) + "...",
+        // instructions: meal.strInstructions.slice(0, 100) + "...",
         link: meal.strSource || meal.strYoutube || "https://www.themealdb.com/",
         emoji: "🍽️",
     }
@@ -40,7 +40,7 @@ async function runBot() {
 
     const text = `${meal.emoji} Today's featured dish: ${meal.name}
 🌍 Origin: ${meal.country}
-📖 Description: ${meal.instructions}
+// 📖 Description: ${meal.instructions}
 🔗 Learn more: ${meal.link}
 #GlobalMeal #FoodBot #DailyDish`
 
