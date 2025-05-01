@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>我的历史记录</title><link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>历史推荐记录</h1>
+  <% if (history.length === 0) { %>
+    <p>你还没有历史记录哦～</p>
+  <% } else { %>
+    <ul>
+      <% history.forEach(item => { %>
+        <li>
+          <p><strong><%= item.date %></strong> - <%= item.drinkName %></p>
+          <% if (item.image) { %>
+            <img src="<%= item.image %>" alt="Drink Image" width="100">
+          <% } %>
+          <p>主要成分：<%= item.ingredients.join(", ") %></p>
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>

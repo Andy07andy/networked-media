@@ -1,0 +1,73 @@
+[
+  {
+    "username": "andy",
+    "passwordHash": "$2b$10$o9eFTttXPMJgdsmwk1Uh6.jr401mbTojJF8KaGzf9ZMViOS8S/N8m",
+    "birthday": {
+      "year": "2005",
+      "month": "7",
+      "day": "29",
+      "hour": "12"
+    },
+    "previous": [
+      {
+        "date": "2025-05-01",
+        "drink": {
+          "name": "暂无推荐",
+          "image": "",
+          "ingredients": []
+        }
+      }
+    ]
+  },
+  {
+    "username": "lbc",
+    "passwordHash": "$2b$10$BeJA2Z3ryzhU6i5ooQB7GukLUngI9HlcjMk7hVm2S60XkbX7OdxAa",
+    "birthday": {
+      "year": "2005",
+      "month": "5",
+      "day": "19",
+      "hour": "12"
+    },
+    "previous": [
+      {
+        "date": "2025-05-01",
+        "drink": {
+          "name": "Adam Sunrise",
+          "image": "https://www.thecocktaildb.com/images/media/drink/vtuyvu1472812112.jpg",
+          "ingredients": [
+            "Vodka",
+            "Lemonade",
+            "Water",
+            "Sugar"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "username": "nory",
+    "passwordHash": "$2b$10$j3XaEswFAjOCrXtHMxxbkeZ/n0CO7YoQYqEIYas4ZDipwwtAjBIk6",
+    "birthday": {
+      "year": "2005",
+      "month": "4",
+      "day": "15",
+      "hour": "12"
+    },
+    "previous": [
+      {
+        "date": "2025-05-01",
+        "drink": {
+          "name": "Apricot punch",
+          "image": "https://www.thecocktaildb.com/images/media/drink/tuxxtp1472668667.jpg",
+          "ingredients": [
+            "Apricot brandy",
+            "Champagne",
+            "Vodka",
+            "7-Up",
+            "Orange juice"
+          ]
+        }
+      }
+    ]
+  }
+]

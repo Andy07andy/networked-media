@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>你的饮品推荐结果</title>
+</head>
+<body>
+  <h1>🎯 你的八字饮品推荐结果</h1>
+
+  <h2>🧩 出生信息分析</h2>
+  <p><strong>你的日主（日干）:</strong> <%= dayGan %>（<%= userElement %>）</p>
+  <p><strong>月令（月支）:</strong> <%= monthBranch %>（<%= monthElement %>）</p>
+  <p><strong>身强/身弱判断:</strong> <%= bodyStatus %></p>
+  <p><strong>需要补充的五行:</strong> <%= neededElement %></p>
+
+  <h2>📅 今日运势分析</h2>
+  <p><strong>今天是:</strong> <%= todayDayGanZhi %> 日（天干: <%= todayStem %>, 五行: <%= todayElement %>）</p>
+  <p><strong>今日顺/逆势:</strong> <%= todayStatus %></p>
+
+  <h2>🍹 用户饮品偏好</h2>
+  <p><strong>是否接受酒精饮品:</strong> <%= alcoholPreference === "Alcoholic" ? "接受" : "只要无酒精" %></p>
+  <p><strong>过敏成分（如有）:</strong> <%= allergies || "无" %></p>
+
+  <h2>✨ 今日为你推荐的饮品 ✨</h2>
+  <% if (recommendedDrink) { %>
+    <p><strong>饮品名:</strong> <%= recommendedDrink.name %></p>
+    <% if (recommendedDrink.image) { %>
+      <img src="<%= recommendedDrink.image %>" alt="Drink Image" width="200">
+    <% } %>
+    <p><strong>主要成分:</strong> <%= recommendedDrink.ingredients.join(", ") %></p>
+  <% } else { %>
+    <p>（今日暂无特别符合的饮品，但你可以享受生活的顺流之美！✨）</p>
+  <% } %>
+
+  <br><br>
+  <a href="/">🔄 重新开始</a>
+</body>
+</html>

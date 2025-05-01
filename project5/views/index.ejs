@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>八字饮品推荐 - 输入生日</title>
+</head>
+<body>
+  <h1>请输入你的出生信息</h1>
+  <form action="/result" method="POST">
+    <label>年份：<input type="number" name="year" required></label><br><br>
+    <label>月份：<input type="number" name="month" required></label><br><br>
+    <label>日期：<input type="number" name="day" required></label><br><br>
+    <label>时辰（24小时制0~23）：<input type="number" name="hour" min="0" max="23" required></label><br><br>
+    <button type="submit">生成推荐</button>
+  </form>
+</body>
+</html>
