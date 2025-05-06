@@ -9,13 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@seald-io/nedb": "^4.1.1",
     "axios": "^1.9.0",
     "bcrypt": "^5.1.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
-    "lunar-javascript": "^1.7.3"
+    "lunar-javascript": "^1.7.3",
+    "nedb": "^1.8.0"
   },
   "description": ""
 }
