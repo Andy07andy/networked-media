@@ -11,7 +11,6 @@ const app = express();
 const PORT = 3000;
 const userDB = new Datastore({ filename: "database.txt", autoload: true });
 
-
 // Flavor profiles for vibes
 const flavorTagsMap = {
   "Green Tea": ["Refreshing", "Earthy"],
