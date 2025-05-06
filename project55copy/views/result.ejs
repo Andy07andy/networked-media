@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>今日推荐</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar container">
+    <ul>
+      <a href="/result">Today's Drink</a> |
+        <a href="/previous">History</a> |
+        <a href="/about">About Bazi</a> |
+        <a href="/logout">Logout</a>
+    </ul>
+  </nav>
+  <h2>今日推荐饮品</h2>
+<% if (recommendedDrink) { %>
+  <div class="today-layout">
+    <div class="drink-card">
+      <img src="<%= recommendedDrink.image %>" alt="Drink Image">
+      <h3><%= recommendedDrink.name %></h3>
+    </div>
+    <div class="description">
+      <p><strong>成分：</strong><%= recommendedDrink.ingredients.join(', ') %></p>
+      <p>✨ 你今天的能量之选正在等待你的品尝 ✨</p>
+    </div>
+  </div>
+<% } else { %>
+  <p>今日暂无特别推荐，静享当下吧！✨</p>
+<% } %>
+
+</body>
+</html>

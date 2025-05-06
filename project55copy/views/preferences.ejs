@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Today's Preferences</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/logout">Logout</a>
+  </nav>
+
+  <h1>Tell us your mood today</h1>
+  <form action="/result" method="POST" autocomplete="off">
+
+    <p>
+      Do you want an alcoholic drink today?
+      <select name="alcoholPreference">
+        <option value="Alcoholic">Yes (Alcoholic)</option>
+        <option value="Non_Alcoholic">No (Non-Alcoholic)</option>
+      </select>
+    </p>
+
+    <p>Any allergies you'd like to avoid today? (You can check multiple)</p>
+    <label><input type="checkbox" name="allergies" value="milk"> Milk</label>
+    <label><input type="checkbox" name="allergies" value="egg"> Egg</label>
+    <label><input type="checkbox" name="allergies" value="peanut"> Peanut</label>
+    <label><input type="checkbox" name="allergies" value="lemon"> Lemon</label>
+    <label><input type="checkbox" name="allergies" value="chocolate"> Chocolate</label>
+
+    <br><br>
+    <button type="submit">Get my drink!</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* /* =============================
+   CARD-BASED VISUAL SYSTEM
+   Inspired by Pinterest + Your Style
+   For use on: About / History / Today / Login
+============================= */
+
+:root {
+  --bg-light: #f5e7c4;
+  --bg-accent: #fff6ea;
+  --text-main: #3b2d1f;
+  --accent-color: #c55229;
+  --hover-accent: #a94020;
+  --card-radius: 18px;
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #e1d2ae;
+  font-size: 1.1rem;
+  font-family: 'Georgia', serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* CARD SCROLL FOR PREVIOUS PAGE */
+.card-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 2rem 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  background-color: var(--bg-accent);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  min-width: 280px;
+  max-width: 320px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: var(--accent-color);
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* TODAY PAGE LAYOUT */
+.today-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.today-layout .drink-card {
+  flex: 1 1 45%;
+  background: var(--bg-accent);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  text-align: center;
+}
+
+.today-layout .drink-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.today-layout .description {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* AUTH BOXES (LOGIN & SIGNUP) */
+.auth-box {
+  max-width: 600px;
+  margin: 6rem auto;
+  background-color: var(--bg-accent);
+  border-radius: var(--card-radius);
+  padding: 3rem;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.auth-box input[type="text"],
+.auth-box input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 1.2rem 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f8e4d2;
+  font-size: 1rem;
+}
+
+.auth-box button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: background-color 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: var(--hover-accent);
+}
+
+/* ABOUT PAGE CARDS */
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #f7e1d7;
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+}
+
+.about-card h4 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+} 

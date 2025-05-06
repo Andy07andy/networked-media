@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Preferences | BaZi Drinks</title>
+  <link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Tell Us Your Preferences</h2>
+    <form action="/result" method="POST" autocomplete="off">
+      <label>Do you want an alcoholic drink today?</label>
+      <select name="alcoholPreference" required>
+        <option value="Alcoholic">Yes (Alcoholic)</option>
+        <option value="Non_Alcoholic">No (Non-Alcoholic)</option>
+      </select>
+
+      <p>Any allergies you'd like to avoid? (Select all that apply)</p>
+      <label><input type="checkbox" name="allergies" value="milk"> Milk</label>
+      <label><input type="checkbox" name="allergies" value="egg"> Egg</label>
+      <label><input type="checkbox" name="allergies" value="peanut"> Peanut</label>
+      <label><input type="checkbox" name="allergies" value="lemon"> Lemon</label>
+      <label><input type="checkbox" name="allergies" value="chocolate"> Chocolate</label>
+      <label>
+        <input type="checkbox" name="allergies" value="other" onchange="toggleOtherInput(this)">
+        Other
+      </label>
+      <input type="text" name="otherAllergy" id="otherAllergyInput" placeholder="Please specify" style="display:none; margin-top: 5px;" />
+    
+      <button type="submit">Get My Drink</button>
+    </form>
+    <p><a href="/logout">Log Out</a></p>
+  </div>
+  <script>
+    function toggleOtherInput(checkbox) {
+      const otherInput = document.getElementById('otherAllergyInput');
+      if (checkbox.checked) {
+        otherInput.style.display = 'block';
+      } else {
+        otherInput.style.display = 'none';
+        otherInput.value = '';
+      }
+    }
+  </script>
+  
+</body>
+</html>

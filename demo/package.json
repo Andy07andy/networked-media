@@ -14,8 +14,7 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
-    "lunar-javascript": "^1.7.3",
-    "nedb": "^1.8.0"
+    "lunar-javascript": "^1.7.3"
   },
   "description": ""
 }

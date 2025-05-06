@@ -41,6 +41,27 @@
             "Sugar"
           ]
         }
+      },
+      {
+        "date": "2025-05-03",
+        "drink": {
+          "name": "Angelica Liqueur",
+          "image": "https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg",
+          "ingredients": [
+            "Angelica root",
+            "Almond",
+            "Allspice",
+            "Cinnamon",
+            "Anise",
+            "Coriander",
+            "Marjoram leaves",
+            "Vodka",
+            "Sugar",
+            "Water",
+            "Food coloring",
+            "Food coloring"
+          ]
+        }
       }
     ]
   },
@@ -65,6 +86,31 @@
             "Vodka",
             "7-Up",
             "Orange juice"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "username": "n",
+    "passwordHash": "$2b$10$rB1PgfU55xIj6sxwrwGFDe/zuGxC8v66AbsBdJc9fwqUTKRoSHN/C",
+    "birthday": {
+      "year": "2007",
+      "month": "7",
+      "day": "8",
+      "hour": "12"
+    },
+    "previous": [
+      {
+        "date": "2025-05-03",
+        "drink": {
+          "name": "Alaska Cocktail",
+          "image": "https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg",
+          "ingredients": [
+            "Orange bitters",
+            "Gin",
+            "Yellow Chartreuse",
+            "Lemon peel"
           ]
         }
       }

@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><title>今日推荐</title><link rel="stylesheet" href="/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Today’s Drink</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <nav class="navbar container">
-    <ul>
-      <li><a href="/result">今日推荐</a></li>
-      <li><a href="/previous">历史记录</a></li>
-      <li><a href="/logout">Logout</a></li>
-    </ul>
+<body >
+  <nav class="navbar">
+    <a href="/result" class="active">Today's Drink</a>
+    <a href="/previous">History</a>
+    <a href="/about" >About Project</a>
+    <a href="/logout">Logout</a>
   </nav>
-  <h1>🎯 你的专属今日饮品</h1>
+
   <% if (recommendedDrink) { %>
-    <p><strong>饮品名：</strong><%= recommendedDrink.name %></p>
-    <% if (recommendedDrink.image) { %>
-      <img src="<%= recommendedDrink.image %>" width="200" alt="Drink Image">
-    <% } %>
-    <p><strong>成分：</strong><%= recommendedDrink.ingredients.join(', ') %></p>
+    <div class="result-layout">
+      <div class="left-panel">
+        <img src="<%= recommendedDrink.image %>" alt="<%= recommendedDrink.name %>">
+      </div>
+      <div class="right-panel">
+        <h1><%= recommendedDrink.name %></h1>
+        <p><strong>Ingredients:</strong> <%= Array.isArray(recommendedDrink.ingredients) ? recommendedDrink.ingredients.join(', ') : "N/A" %></p>
+
+        <p><strong>Flavor Profile:</strong> <%= recommendedDrink.flavorProfile %></p>
+        <p><strong>Recommended Time:</strong> <%= recommendedDrink.timeOfDay %></p>
+        <p><strong>Element Affinity:</strong> <%= Array.isArray(recommendedDrink.elements) ? recommendedDrink.elements.join(', ') : "Wood + Water" %></p>
+
+        <p><strong>Mood Match:</strong> <%= recommendedDrink.mood %></p>
+        <p><strong>Bazi Insight:</strong> <%= recommendedDrink.baziComment %></p>
+      </div>
+    </div>
+    
   <% } else { %>
-    <p>今日暂无特别推荐，静享当下吧！✨</p>
+    <p class="no-recommendation">No special drink for today. Embrace the moment! ✨</p>
   <% } %>
 </body>
 </html>

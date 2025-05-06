@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>历史推荐</title>
+  <title>Previous Recommendations</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <nav>
-    <a href="/result">今日推荐</a> |
-    <a href="/logout">退出登录</a>
+  <nav class="navbar">
+    <a href="/result">Today's Drink</a>
+    <a href="/previous" class="active">History</a>
+    <a href="/about" >About Project</a>
+    <a href="/logout">Logout</a>
   </nav>
-  <h1>🍹 历史饮品推荐</h1>
+
+  <h1 class="tit">🍹 Previous Drink Recommendations</h1>
+
   <% if (previous.length) { %>
-    <ul>
+    <div class="centered-grid">
       <% previous.forEach(item => { %>
-        <li>
-          <h3><%= item.date %> — <%= item.drink.name %></h3>
+        <div class="card">
           <% if (item.drink.image) { %>
-            <img src="<%= item.drink.image %>" width="150">
+            <img src="<%= item.drink.image %>" alt="Drink Image">
           <% } %>
-          <p>成分：<%= item.drink.ingredients.join(', ') %></p>
-        </li>
+          <h3><%= item.date %></h3>
+          <p><%= item.drink.name %></p>
+        </div>
       <% }) %>
-    </ul>
+    </div>
   <% } else { %>
-    <p>还没有历史记录哦～</p>
+    <p>No drink history yet~</p>
   <% } %>
+  
 </body>
 </html>

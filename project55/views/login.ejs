@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><title>登录 八字饮品推荐</title><link rel="stylesheet" href="/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log In | BaZi Drink Recommendation</title>
+  <link rel="stylesheet" href="/auth.css">
 </head>
 <body>
-  <h1>用户登录</h1>
-  <% if (error) { %><p style="color:red;"><%= error %></p><% } %>
-  <form action="/login" method="POST">
-    <label>用户名：<input name="username" required></label><br><br>
-    <label>密码：<input type="password" name="password" required></label><br><br>
-    <button type="submit">登录</button>
-  </form>
-  <p>还没有账号？<a href="/signup">立即注册</a></p>
-
+  <div class="container">
+    <h2>Log In</h2>
+    <form action="/login" method="POST" autocomplete="off">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+    <p><a href="/signup">Don’t have an account? Sign up here.</a></p>
+    <% if (error) { %><p class="error-message"><%= error %></p><% } %>
+  </div>
 </body>
 </html>

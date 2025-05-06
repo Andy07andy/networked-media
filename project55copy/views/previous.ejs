@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>历史推荐</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/result">Today's Drink</a> |
+        <a href="/about">About Bazi</a> |
+        <a href="/logout">Logout</a>
+  </nav>
+  <h1>🍹 历史饮品推荐</h1>
+<% if (previous.length) { %>
+  <div class="card-grid">
+    <% previous.forEach(item => { %>
+      <div class="card">
+        <h3><%= item.date %> — <%= item.drink.name %></h3>
+        <% if (item.drink.image) { %>
+          <img src="<%= item.drink.image %>" alt="Drink Image">
+        <% } %>
+        <p>成分：<%= item.drink.ingredients.join(', ') %></p>
+      </div>
+    <% }) %>
+  </div>
+<% } else { %>
+  <p>还没有历史记录哦～</p>
+<% } %>
+
+
+  <!-- <h2>历史推荐</h2>
+<ul>
+  <% previous.forEach(p => { %>
+    <li><strong><%= p.date %></strong> - <%= p.drink.name %></li>
+  <% }) %>
+</ul>
+<a href="/result">返回今日推荐</a> |
+<a href="/logout">登出</a> -->
+
+</body>
+</html>

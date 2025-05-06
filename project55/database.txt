@@ -1,0 +1,173 @@
+[
+  {
+    "username": "2",
+    "password": "2",
+    "birthday": {
+      "year": "2000",
+      "month": "5",
+      "day": "5",
+      "hour": "10"
+    },
+    "previous": [
+      {
+        "date": "2025-05-01",
+        "drink": {
+          "name": "Blue Lagoon",
+          "image": "https://www.thecocktaildb.com/images/media/drink/5wm4zo1582579154.jpg",
+          "ingredients": [
+            "Blue Curacao",
+            "Vodka",
+            "Lemonade"
+          ],
+          "flavorProfile": "Citrusy, Tropical",
+          "elements": [
+            "水"
+          ],
+          "timeOfDay": "Night",
+          "mood": "To relax and recharge",
+          "baziComment": "Today the energy of 壬 supports your energy today. Take action and feel empowered."
+        }
+      },
+      {
+        "date": "2025-05-02",
+        "drink": {
+          "name": "Mint Mojito",
+          "image": "https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg",
+          "ingredients": [
+            "Mint",
+            "Lime",
+            "Rum"
+          ],
+          "flavorProfile": "Cool, Fresh",
+          "elements": [
+            "木"
+          ],
+          "timeOfDay": "Morning",
+          "mood": "For creative flow and growth",
+          "baziComment": "Today the energy of 甲 may distract your focus. Stay grounded."
+        }
+      },
+      {
+        "date": "2025-05-03",
+        "drink": {
+          "name": "Chocolate Martini",
+          "image": "https://www.thecocktaildb.com/images/media/drink/q7w4xu1487603180.jpg",
+          "ingredients": [
+            "Chocolate",
+            "Vodka",
+            "Cream"
+          ],
+          "flavorProfile": "Sweet, Comforting",
+          "elements": [
+            "土"
+          ],
+          "timeOfDay": "Afternoon",
+          "mood": "To ground and stabilize",
+          "baziComment": "Today the energy of 丁 may drain your energy. Rest and hydrate."
+        }
+      },
+      {
+        "date": "2025-05-06",
+        "drink": {
+          "name": "3-Mile Long Island Iced Tea",
+          "image": "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg",
+          "ingredients": [
+            "Gin",
+            "Light rum",
+            "Tequila",
+            "Triple sec",
+            "Vodka",
+            "Coca-Cola",
+            "Sweet and sour",
+            "Bitters",
+            "Lemon"
+          ],
+          "flavorProfile": "Strong, Spicy, Citrusy, Refreshing",
+          "elements": [
+            "金",
+            "火",
+            "木"
+          ],
+          "timeOfDay": "Late Afternoon",
+          "mood": "For focus and clarity",
+          "baziComment": "Today the energy of 癸 mirrors your energy. A good day to reflect."
+        }
+      }
+    ]
+  },
+  {
+    "username": "1",
+    "password": "1",
+    "birthday": {
+      "year": "1995",
+      "month": "11",
+      "day": "22",
+      "hour": "18"
+    },
+    "previous": [
+      {
+        "date": "2025-05-01",
+        "drink": {
+          "name": "Tequila Sunrise",
+          "image": "https://www.thecocktaildb.com/images/media/drink/quqyqp1480879103.jpg",
+          "ingredients": [
+            "Tequila",
+            "Orange Juice",
+            "Grenadine"
+          ],
+          "flavorProfile": "Citrusy, Sweet",
+          "elements": [
+            "火"
+          ],
+          "timeOfDay": "Evening",
+          "mood": "To uplift and energize",
+          "baziComment": "Today the energy of 丙 mirrors your energy. A good day to reflect."
+        }
+      },
+      {
+        "date": "2025-05-02",
+        "drink": {
+          "name": "Espresso Martini",
+          "image": "https://www.thecocktaildb.com/images/media/drink/nl89tf1518947401.jpg",
+          "ingredients": [
+            "Coffee",
+            "Vodka",
+            "Sugar Syrup"
+          ],
+          "flavorProfile": "Bitter, Bold",
+          "elements": [
+            "火"
+          ],
+          "timeOfDay": "Evening",
+          "mood": "To uplift and energize",
+          "baziComment": "Today the energy of 庚 challenges your energy today. Take it slow and be mindful."
+        }
+      },
+      {
+        "date": "2025-05-06",
+        "drink": {
+          "name": "151 Florida Bushwacker",
+          "image": "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg",
+          "ingredients": [
+            "Malibu rum",
+            "Light rum",
+            "151 proof rum",
+            "Dark Creme de Cacao",
+            "Cointreau",
+            "Milk",
+            "Coconut liqueur",
+            "Vanilla ice-cream"
+          ],
+          "flavorProfile": "Creamy, Soothing",
+          "elements": [
+            "木",
+            "土"
+          ],
+          "timeOfDay": "Morning",
+          "mood": "For creative flow and growth",
+          "baziComment": "Today the energy of 丁 mirrors your energy. A good day to reflect."
+        }
+      }
+    ]
+  }
+]

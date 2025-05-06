@@ -179,6 +179,7 @@ app.post('/result', async (req, res) => {
 
     for (const drink of drinkList) {
       const detail = await fetchDrinkDetail(drink.idDrink);
+      
       await new Promise(resolve => setTimeout(resolve, 200));
 
       // 检查有没有过敏成分

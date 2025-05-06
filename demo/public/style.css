@@ -1,0 +1,148 @@
+/* 通用设置 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5e7c4;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+  }
+  
+  p, label, input, button, a {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  }
+  
+  /* 导航栏 */
+  header {
+    background-color: #f5e7c4;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid #d9c9a5;
+  }
+  
+  header a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 按钮 */
+  button {
+    background-color: #c55229;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #a94020;
+  }
+  
+  /* 表单 */
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  input[type="time"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* 页面容器 */
+  .container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* 卡片 */
+  .card {
+    background-color: #f7e1d7;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  
+  /* 图片 */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* 历史记录列表 */
+  .history-item {
+    background: #fff6ea;
+    border: 1px solid #f0d9b5;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .history-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* 链接 */
+  a.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c55229;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  a.button-link:hover {
+    background-color: #a94020;
+  }
+  
+  /* 分块布局 */
+  .two-column {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .two-column > div {
+    flex: 1;
+  }
+  

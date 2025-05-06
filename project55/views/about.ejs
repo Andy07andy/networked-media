@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>About Bazi</title>
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="about-page">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="/result">Today's Drink</a>
+    <a href="/previous">History</a>
+    <a href="/about" class="active">About Project</a>
+    <a href="/logout">Logout</a>
+  </nav>
+
+  <!-- hint -->
+  <section id="hero">
+    <div class="scroll-hint">↓ Scroll Down</div>
+  </section>
+
+ 
+<section id="arch-section">
+    <div class="arch-content">
+      <div class="slogan">
+        <h1>Unlocking the Energy in Your Birth</h1>
+        <p>Understand the ancient wisdom behind your daily drink ritual</p>
+      </div>
+      
+  <!-- inforamtion of the project -->
+  <section class="info-blocks">
+    <div class="info-item">
+      <strong>What is Bazi?</strong>
+      <p>
+        “Bazi” (八字) translates to “Eight Characters” — a system rooted in traditional Chinese metaphysics.
+        These eight characters are derived from your exact birth date and time, each pairing a “Heavenly Stem” and an “Earthly Branch.”
+        Together, they form a unique energetic blueprint that reflects your personality, strengths, challenges, and the cyclical rhythms of your life.
+      </p>
+    </div>
+
+    <div class="info-item">
+      <strong>How is it Calculated?</strong>
+      <p>
+        We begin by converting your Gregorian birthdate and hour into the traditional Chinese lunar calendar.
+        This yields four pillars — year, month, day, and hour — each composed of one stem and one branch.
+        The resulting “Eight Characters” (two from each pillar) correspond to the Five Elements (Wood, Fire, Earth, Metal, Water),
+        allowing us to assess balance and energy flow within your life chart.
+      </p>
+    </div>
+
+    <div class="info-item">
+      <strong>Traditional Applications</strong>
+      <p>
+        Bazi is commonly used to interpret one’s fate, predict fortune cycles, and offer guidance on relationships, health, and career.
+        For centuries, people have used Bazi to identify auspicious dates for weddings, business launches, or even house moves —
+        all by aligning personal energy with cosmic rhythms.
+      </p>
+    </div>
+
+    <div class="info-item">
+      <strong>How We Use Bazi Here</strong>
+      <p>
+        We analyze your Bazi chart to identify elemental imbalances — for example, whether you lack Water or have an excess of Fire.
+        These insights help us match you with ingredients associated with the elements you need most that day.
+        Each drink recommendation is a ritual for energetic alignment — harmonizing your inner landscape through flavor, temperature, 
+        and Five Element symbolism.
+      </p>
+    </div>
+  </section>
+</section>
+
+
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const arch = document.getElementById('arch-section');
+      const scrollHint = document.querySelector('.scroll-hint');
+      const triggerPoint = window.innerHeight * 0.3;
+  
+      // Show the arch when scrolled past trigger point
+      if (window.scrollY > triggerPoint) {
+        arch.classList.add('visible');
+      } else {
+        arch.classList.remove('visible');
+      }
+  
+      // Hide scroll hint when scrolling down
+      if (window.scrollY > 50) {
+        scrollHint.style.opacity = '0';
+        scrollHint.style.pointerEvents = 'none';
+      } else {
+        scrollHint.style.opacity = '1';
+        scrollHint.style.pointerEvents = 'auto';
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>
