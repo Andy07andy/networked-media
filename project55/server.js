@@ -9,7 +9,8 @@ const ingredientElementMap = require("./ingredientMap");
 
 const app = express();
 const PORT = 3000;
-const userDB = new Datastore({ filename: "users.db", autoload: true });
+const userDB = new Datastore({ filename: "database.txt", autoload: true });
+
 
 // Flavor profiles for vibes
 const flavorTagsMap = {
@@ -150,7 +151,7 @@ app.post("/signup", (req, res) => {
 
   userDB.findOne({ username }, (err, existingUser) => {
     if (existingUser) {
-      return res.render("signup", { error: "用户名已存在" });
+      return res.render("signup", { error: "The username already exists" });
     }
 
     const newUser = {
@@ -173,7 +174,7 @@ app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
   userDB.findOne({ username, password }, (err, user) => {
-    if (!user) return res.render("login", { error: "用户名或密码错误" });
+    if (!user) return res.render("login", { error: "The username or password is incorrect" });
 
     req.session.username = username;
     res.redirect("/preferences");

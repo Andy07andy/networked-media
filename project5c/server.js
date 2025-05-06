@@ -154,7 +154,10 @@ async function fetchDrinkDetail(id) {
 }
 
 // ROUTES
-app.get("/", (req, res) => res.render("index"));
+app.get("/", (req, res) => {
+  res.render("index", { session: req.session });
+});
+
 app.get("/index", (req, res) => res.redirect("/"));
 
 app.get("/signup", (req, res) => res.render("signup", { error: null }));
