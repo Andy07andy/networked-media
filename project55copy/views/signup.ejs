@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | BaZi Drink Recommendation</title>
+  <link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="POST" autocomplete="off">
+      <input name="username" type="text" placeholder="Username" required />
+      <input name="password" type="password" placeholder="Password" required />
+      <label>Date and Time of Birth</label>
+      <input name="year" type="number" placeholder="Year" required />
+      <input name="month" type="number" placeholder="Month" required />
+      <input name="day" type="number" placeholder="Day" required />
+      <input name="hour" type="number" placeholder="Hour (0-23)" required />
+      <button type="submit">Register</button>
+    </form>
+    <p><a href="/login">Already have an account? Log in here.</a></p>
+    <% if (error) { %><p class="error-message"><%= error %></p><% } %>
+  </div>
+</body>
+</html>

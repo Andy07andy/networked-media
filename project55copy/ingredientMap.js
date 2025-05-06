@@ -5,7 +5,7 @@ module.exports = {
     "Vermouth": "木", "Absinthe": "木", "Peach Schnapps": "木",
     "Midori Melon Liqueur": "木", "Blue Curacao": "木", "Curacao": "木",
     "Cranberry Juice": "木", "Pineapple Juice": "木", "Herbs": "木",
-    "Grapefruit Juice": "木",
+    "Grapefruit Juice": "木", "Sour mix": "木",
   
     // 火 Fire
     "Vodka": "火", "Rum": "火", "White Rum": "火", "Dark Rum": "火",
@@ -27,7 +27,7 @@ module.exports = {
     "Gin": "金", "Champagne": "金", "Tonic Water": "金",
     "Soda Water": "金", "Sparkling Water": "金", "Dry Vermouth": "金",
     "Prosecco": "金", "White Wine": "金", "Light Rum": "金",
-    "Club Soda": "金", "Lillet Blanc": "金",
+    "Club Soda": "金", "Lillet Blanc": "金", "7-Up": "金",
   
     // 水 Water
     "Coconut Water": "水", "Grape Juice": "水", "Sprite": "水",
@@ -35,6 +35,8 @@ module.exports = {
     "Pearl Barley Water": "水", "Aloe Vera Juice": "水",
     "Energy Drink": "水", "Coconut Milk": "水", "Perrier": "水",
     "7-Up": "水", "Blackcurrant Cordial": "水", "Red Bull": "水",
-    "Water": "水", "Tamarind Juice": "水"
+    "Water": "水", "Tamarind Juice": "水","Blue Curacao": "水", "Blueberry schnapps": "水"
   };
+  
+  
   
